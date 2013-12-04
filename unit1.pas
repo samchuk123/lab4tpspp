@@ -17,6 +17,9 @@ type
     Button2: TButton;
     Chart1: TChart;
     Chart1LineSeries1: TLineSeries;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
     Image1: TImage;
     Label1: TLabel;
     Label2: TLabel;
@@ -79,14 +82,16 @@ end;
 
 procedure TForm1.Button1Click(Sender: TObject);
 var
-  x0, x, eps: real;
+  x0, x, eps, lg, pg: real;
   ib1: string;
   code, k: integer;
 begin
-  eps := 0.001;
+  lg:=StrToFloat(Edit1.Text);
+  pg:=StrToFloat(Edit2.Text);
+  eps :=StrToFloat(Edit3.Text);
   ib1 := InputBox('Начальное приближение', 'Введите начальное приближение', '');
   val(ib1, x0, code);
-  if (x0 < 0.0) or (x0 > 1.0) or (code <> 0) then
+  if (x0 < lg) or (x0 > pg) or (code <> 0) then
     MessageDlg('Ошибка ввода', mtError, [mbOK], 0)
   else
   begin

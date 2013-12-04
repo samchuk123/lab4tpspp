@@ -1,18 +1,18 @@
 object Form1: TForm1
-  Left = 284
+  Left = 390
   Height = 462
-  Top = 192
-  Width = 904
+  Top = 21
+  Width = 656
   Caption = 'Лабораторная работа 4 Котай'
   ClientHeight = 462
-  ClientWidth = 904
+  ClientWidth = 656
   LCLVersion = '1.0.12.0'
   object Label1: TLabel
     Left = 40
-    Height = 20
+    Height = 19
     Top = 84
-    Width = 200
-    Caption = 'Левая граница               0.0'
+    Width = 110
+    Caption = 'Левая граница'
     Font.Height = -16
     Font.Name = 'Helvetica-6-Medium'
     ParentColor = False
@@ -20,10 +20,10 @@ object Form1: TForm1
   end
   object Label2: TLabel
     Left = 40
-    Height = 20
+    Height = 19
     Top = 116
-    Width = 200
-    Caption = 'Правая граница             1.0'
+    Width = 119
+    Caption = 'Правая граница'
     Font.Height = -16
     Font.Name = 'Helvetica-6-Medium'
     ParentColor = False
@@ -31,10 +31,10 @@ object Form1: TForm1
   end
   object Label3: TLabel
     Left = 40
-    Height = 20
+    Height = 19
     Top = 148
-    Width = 201
-    Caption = 'Точность                     0.001'
+    Width = 67
+    Caption = 'Точность'
     Font.Height = -16
     Font.Name = 'Helvetica-6-Medium'
     ParentColor = False
@@ -241,5 +241,26 @@ object Form1: TForm1
       6D2DBCBC3C7BFAF9F9525BDB038E37B563186E8119866101330CC30266181630
       C3302C6086611E1FFF0F560F42A579E16F7C0000000049454E44AE426082
     }
+  end
+  object Edit1: TEdit
+    Left = 192
+    Height = 23
+    Top = 80
+    Width = 80
+    TabOrder = 4
+  end
+  object Edit2: TEdit
+    Left = 192
+    Height = 23
+    Top = 112
+    Width = 80
+    TabOrder = 5
+  end
+  object Edit3: TEdit
+    Left = 192
+    Height = 23
+    Top = 144
+    Width = 80
+    TabOrder = 6
   end
 end
